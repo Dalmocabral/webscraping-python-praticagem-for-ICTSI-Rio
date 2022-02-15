@@ -13,18 +13,19 @@
 <!-- fim do preloader --> 
 <div class="ictsi_titulo">
     
-    <h1 class="text-center"><img src="../static/img/ship.png" alt=""> Praticagem for ICTSI Rio </h1>
+    <h1 class="text-center"><img src="../static/img/ship.png" alt=""> Praticagem for ICTSIRio </h1>
 </div>
 <br>
 <div class="table-responsive">
     <table class="table table-striped">
         <thead>
             <tr>
-                <th colspan="7" class="text-center">ENTRADA DE NAVIOS NO TERMINAL ICTSI RIO</th>
+                <th colspan="8" class="text-center">ENTRADA DE NAVIOS NO TERMINAL</th>
             </tr>
             <tr>
                 <th>POB</th>
                 <th>NAVIO</th>
+                <th>TIPO</th>
                 <th>CALADO</th>
                 <th>MANOBRA</th>
                 <th>DE</th>
@@ -41,11 +42,12 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th colspan="7" class="text-center">SAÍDA DE NAVIOS NO TERMINAL ICTSI RIO</th>
+                <th colspan="8" class="text-center">SAÍDA DE NAVIOS NO TERMINAL</th>
             </tr>
             <tr>
                 <th>POB</th>
                 <th>NAVIO</th>
+                <th>TIPO</th>
                 <th>CALADO</th>
                 <th>MANOBRA</th>
                 <th>DE</th>
@@ -62,51 +64,63 @@
 
 <script>
     const data = JSON.parse('{{ va | tojson | safe}}');
+    const data2 = JSON.parse('{{ listas | tojson | safe}}');
 
-    buildTable(data)
-    function buildTable(data) {
+    //console.log(data2);
+
+    buildTable(data, data2)
+    function buildTable(data, data2) {
 
         var table = document.getElementById('myTable')
 
         for(var x in data){
-            if(data[x].MANOBRA == 'ENTRADA'){
-                if(data[x].DE == 'TECONT1' || data[x].DE == 'TECONTPROLONG' || data[x].PARA == 'TECONTPROLONG'  || data[x].PARA == 'TECONT1'){
-                var row = `<tr>
-                        <td>${data[x].POB}</td>
-                        <td>${data[x].NAVIO}</td>
-                        <td>${data[x].CALADO}</td>
-                        <td>${data[x].MANOBRA}</td>
-                        <td>${data[x].DE} </td>
-                        <td>${data[x].PARA} </td>
-                        <td><a href="#" class="btn btn-success btn-lg btn-sm" tabindex="-1" role="button" aria-disabled="true">View</a></td>
-                                                                                 
-                        </tr>`
+            for(var y in data2){
+                if(data[x].MANOBRA == 'ENTRADA'){
+                    if(data[x].DE == 'TECONT1' || data[x].DE == 'TECONTPROLONG' || data[x].PARA == 'TECONTPROLONG'  || data[x].PARA == 'TECONT1'){
+                        if (data[x].NAVIO == data2[y].Navio) {
+                            var row = `<tr>
+                                    <td>${data[x].POB}</td>
+                                    <td>${data[x].NAVIO}</td>
+                                    <td>${data2[y].Tipo}</td>
+                                    <td>${data[x].CALADO}</td>
+                                    <td>${data[x].MANOBRA}</td>
+                                    <td>${data[x].DE} </td>
+                                    <td>${data[x].PARA} </td>
+                                    <td><a href="https://www.marinetraffic.com/pt/ais/details/ships/mmsi:${data2[y].MMSI}" target="_blank" class="btn btn-success btn-lg btn-sm" tabindex="-1" role="button" aria-disabled="true">View</a></td>
+                                                                                            
+                                    </tr>`
 
-                            table.innerHTML += row
+                                        table.innerHTML += row
+                        }
+                    }
                 }
-            }
+            }    
         }
 
         var table = document.getElementById('myTable2')
 
-        for(var i in data){
-            if(data[x].MANOBRA == 'SAÍDA'){
-                if(data[i].DE == 'TECONT1' || data[i].DE == 'TECONTPROLONG' || data[x].PARA == 'TECONTPROLONG'  || data[i].PARA == 'TECONT1'){
-                var row = `<tr>
-                        <td>${data[i].POB}</td>
-                        <td>${data[i].NAVIO}</td>
-                        <td>${data[i].CALADO}</td>
-                        <td>${data[i].MANOBRA}</td>
-                        <td>${data[i].DE} </td>
-                        <td>${data[i].PARA} </td>
-                        <td><button type="button" class="btn btn-secondary btn-sm">Views</button></td>
-                        
-                                                                                 
-                        </tr>`
+        for(var x in data){
+            for(var y in data2){
+                if(data[x].MANOBRA == 'ENTRADA'){
+                    if(data[x].DE == 'TECONT1' || data[x].DE == 'TECONTPROLONG' || data[x].PARA == 'TECONTPROLONG'  || data[x].PARA == 'TECONT1'){
+                        if (data[x].NAVIO == data2[y].Navio) {
+                            var row = `<tr>
+                                    <td>${data[x].POB}</td>
+                                    <td>${data[x].NAVIO}</td>
+                                    <td>${data2[y].Tipo}</td>
+                                    <td>${data[x].CALADO}</td>
+                                    <td>${data[x].MANOBRA}</td>
+                                    <td>${data[x].DE} </td>
+                                    <td>${data[x].PARA} </td>
+                                    <td><a href="" class="btn btn-secondary btn-lg btn-sm" tabindex="-1" role="button" aria-disabled="true">View</a></td>
+                                                                                            
+                                    </tr>`
 
-                            table.innerHTML += row
+                                        table.innerHTML += row
+                        }
+                    }
                 }
-            }
+            }    
         }
     }
 </script>
