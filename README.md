@@ -6,10 +6,9 @@
 ## Descrição do Projeto
 <p>**Praticagem for ICTSIRIO** é um Projeto de aprendizado de **web scraping**, utilizando a linguagem python. No intuito de coletar dados públicos do site da praticagem do Rio de Janeiro e filtrar os navios que somente vai para o terminal de containers.</p>
 
-```
-<img src="https://i.ibb.co/R2fdCS3/aaaaa.png"/>
-```
-![enter image description here](https://files.fm/thumb_show.php?i=k4mnzettx =500x)
+![enter image description here](https://i.ibb.co/R2fdCS3/aaaaa.png =500px)
+
+
 ## 🗃️ O que é Web Scraping
 
 <p>O **web scraping** (raspagem de rede, em tradução livre), também conhecido como extração de dados da **web**, é o nome dado ao processo de coleta de dados estruturados da **web** de maneira automatizada.</p>
