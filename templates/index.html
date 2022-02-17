@@ -101,7 +101,7 @@
 
         for(var x in data){
             for(var y in data2){
-                if(data[x].MANOBRA == 'ENTRADA'){
+                if(data[x].MANOBRA == 'SAÍDA'){
                     if(data[x].DE == 'TECONT1' || data[x].DE == 'TECONTPROLONG' || data[x].PARA == 'TECONTPROLONG'  || data[x].PARA == 'TECONT1'){
                         if (data[x].NAVIO == data2[y].Navio) {
                             var row = `<tr>
