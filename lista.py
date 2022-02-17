@@ -19,16 +19,7 @@ pratic = {
         'Tipo': 'Container Ship',
         'MMSI': 710003840,
     },
-    {
-        "Navio": 'DUBLIN EXPRESS',
-        'Tipo': 'Container Ship',
-        'MMSI': 310825000,
-    },
-    {
-        "Navio": 'MARIANETTA',
-        'Tipo': 'Container Ship',
-        'MMSI': 636014968,
-    },
+    
     
     
 ]}
