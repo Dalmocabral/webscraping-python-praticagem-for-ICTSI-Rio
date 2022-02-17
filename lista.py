@@ -15,7 +15,7 @@ pratic = {
         'MMSI': 725001534,
     },
     {
-        "Navio": 'LOG IN PANTANAL',
+        "Navio": 'LOG-IN PANTANAL',
         'Tipo': 'Container Ship',
         'MMSI': 710003840,
     },
