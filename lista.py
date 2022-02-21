@@ -28,7 +28,12 @@ pratic = {
         "Navio": 'MARIANETTA',
         'Tipo': 'Container Ship',
         'MMSI': 636014968,
-    },   
+    },
+    {
+        "Navio": 'CASTILLO DE MACEDA',
+        'Tipo': 'Chemical/Products Tanker',
+        'MMSI': 710003610,
+    },
     
 ]}
 
