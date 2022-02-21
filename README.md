@@ -1,10 +1,12 @@
 <h1 align="center">      
  ⚓ - Praticagem for ICTSIRIO - 🚢
 </h1>
-
+<div align="center">
+https://praticagemforictsirio.herokuapp.com/
+</div>
 
 ## 📝 Descrição do Projeto
-<p><strong>Praticagem for ICTSIRIO</strong> é um Projeto de aprendizado de <strong>web scraping</strong>, utilizando a linguagem python. No intuito de coletar dados públicos do site da praticagem do Rio de Janeiro e filtrar os navios que somente vai para o terminal de containers.</p>
+<p><strong>Praticagem for ICTSIRIO</strong> é um Projeto de aprendizado de <strong>web scraping</strong>, utilizando a linguagem python. No intuito de coletar dados públicos do site da praticagem do Rio de Janeiro e filtrar os navios que somente vai para o terminal de containers.</p> 
 
 <img src="https://i.ibb.co/R2fdCS3/aaaaa.png">
 
