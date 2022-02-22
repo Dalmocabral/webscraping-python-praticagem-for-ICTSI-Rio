@@ -34,6 +34,11 @@ pratic = {
         'Tipo': 'Chemical/Products Tanker',
         'MMSI': 710003610,
     },
+    {
+        "Navio": 'BBC MARYLAND',
+        'Tipo': 'General Cargo Ship',
+        'MMSI': 305439000,
+    },
     
 ]}
 
