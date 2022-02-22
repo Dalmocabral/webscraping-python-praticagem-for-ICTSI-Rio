@@ -37,7 +37,7 @@ pratic = {
     {
         "Navio": 'BBC MARYLAND',
         'Tipo': 'General Cargo Ship',
-        'MMSI': 305439000,
+        'MMSI': 305459000,
     },
     
 ]}
