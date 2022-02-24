@@ -16,7 +16,7 @@ https://praticagemforictsirio.herokuapp.com/
 <p>O <strong>web scraping</strong> (raspagem de rede, em tradução livre), também conhecido como extração de dados da <strong>web</strong>, é o nome dado ao processo de coleta de dados estruturados da <strong>web</strong> de maneira automatizada.</p>
 
 ## 🛠   Requirements
-<p>Before starting, you will need to have the following tool installed on your machine:<p>
+<p>Antes de começar, você precisará ter a seguinte ferramenta instalada em sua máquina:<p>
 
  - [Python](https://www.python.org/)
  - [Flask-python](https://flask.palletsprojects.com/en/2.0.x/)
