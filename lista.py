@@ -41,7 +41,7 @@ pratic = {
     },
     {
         "Navio": 'GSL MELINA',
-        'Tipo': 'General Cargo Ship',
+        'Tipo': 'Container Ship',
         'MMSI': 636017803,
     },
     
