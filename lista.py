@@ -39,6 +39,11 @@ pratic = {
         'Tipo': 'General Cargo Ship',
         'MMSI': 305459000,
     },
+    {
+        "Navio": 'GSL MELINA',
+        'Tipo': 'General Cargo Ship',
+        'MMSI': 636017803,
+    },
     
 ]}
 
