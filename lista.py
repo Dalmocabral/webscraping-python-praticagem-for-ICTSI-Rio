@@ -44,6 +44,11 @@ pratic = {
         'Tipo': 'Container Ship',
         'MMSI': 636017803,
     },
+    {
+        "Navio": 'POLAR CHILE',
+        'Tipo': 'Container Ship',
+        'MMSI': 636018346,
+    },
     
 ]}
 
