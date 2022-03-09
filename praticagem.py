@@ -7,12 +7,12 @@ def raspagem():
         
         
 
-    filter_praticagem = ['POB', 'NAVIO', 'CALADO', 'MANOBRA', 'DE', 'PARA' ]
+     filter_praticagem = ['POB', 'NAVIO', 'CALADO', 'MANOBRA', 'DE', 'PARA' ]
 
-    new_tabela = tabela.filter(items=filter_praticagem)
+     new_tabela = tabela.filter(items=filter_praticagem)
 
-    x = new_tabela.to_json(orient='records')
+     x = new_tabela.to_json(orient='records')
 
-    data = json.loads(x)
+     data = json.loads(x)
 
-    return data
+     return data
