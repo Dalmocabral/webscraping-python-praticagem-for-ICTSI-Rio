@@ -2,8 +2,12 @@ import pandas as pd
 import json
 
 def raspagem():
-    df = pd.read_html('http://www.praticagem-rj.com.br/', match='TECONT3')
-    tabela = df[3]
+    for i in range(1,3)
+        try:
+            df = pd.read_html('http://www.praticagem-rj.com.br/', match=f'TECONT{i}')
+            tabela = df[3]
+        except:
+            pass
 
 
     filter_praticagem = ['POB', 'NAVIO', 'CALADO', 'MANOBRA', 'DE', 'PARA' ]
