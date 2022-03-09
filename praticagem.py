@@ -2,7 +2,7 @@ import pandas as pd
 import json
 
 def raspagem():
-    df = pd.read_html('http://www.praticagem-rj.com.br/', match='TECONT1')
+    df = pd.read_html('http://www.praticagem-rj.com.br/', match='TECONT3')
     tabela = df[3]
 
 
