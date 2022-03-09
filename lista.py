@@ -52,12 +52,12 @@ pratic = {
     {
         "Navio": 'ANTHEA Y',
         'Tipo': 'Container Ship',
-        'MMSI': 636018346,
+        'MMSI': 636016986,
     },
     {
         "Navio": 'YM TRUST',
         'Tipo': 'Container Ship',
-        'MMSI': 636018346,
+        'MMSI': 5631141200,
     },
     
 ]}
